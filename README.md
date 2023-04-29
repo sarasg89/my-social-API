@@ -20,6 +20,8 @@
 
 ## Credits
 
+[How to validate unique emails with Mongoose](https://masteringjs.io/tutorials/mongoose/mongoose-validate-unique-email)
+
 ## License
 
 MIT License

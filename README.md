@@ -22,6 +22,8 @@
 
 [How to validate unique emails with Mongoose](https://masteringjs.io/tutorials/mongoose/mongoose-validate-unique-email)
 
+[How to format dates](https://www.w3schools.com/jsref/jsref_getseconds.asp)
+
 ## License
 
 MIT License

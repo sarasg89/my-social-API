@@ -1,5 +1,16 @@
 const { Schema, Types } = require('mongoose');
 
+function formatDate(date) {
+    if (!date) return date;
+
+    function addZero(i) {
+        if (i < 10) {i = "0" + i}
+        return i;
+      }
+
+    return (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear() + " at " + date.getHours() + ":" + addZero(date.getMinutes());
+}
+
 const reactionSchema = new Schema(
     {
         reactionId: {
@@ -18,8 +29,14 @@ const reactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            // get: (createdAtVal) => dateFormat(createdAtVal),
+            get: formatDate,
         }
+    },
+    {
+        toJSON: {
+            getters: true,
+        },
+        id: false,
     }
 )
 

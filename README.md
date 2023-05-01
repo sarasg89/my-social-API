@@ -58,6 +58,8 @@ Use Insomnia Core or Postman to test the routes. You can download Insomnia Core 
 
 Watch the video below to see how the routes work:
 
+https://user-images.githubusercontent.com/118869836/235394859-0aab89e4-180c-4725-8929-9c27d7900007.mp4
+
 Test the following routes:
 
 - Users

@@ -89,6 +89,15 @@ http://localhost:3001/api/thoughts/:thoughtId/reactions/:reactionId
 
 ## Screenshots
 
+![Get all users](./assets/images/get%20all%20users.png)
+
+![Get user by id](./assets/images/get%20users.png)
+
+![Get all thoughts](./assets/images/get%20all%20thoughts.png)
+
+![Get thought by id](./assets/images/get%20thought.png)
+
+
 ## Credits
 
 I used the following tutorials/articles to help me build this application:

@@ -4,6 +4,10 @@
 
 ## Description
 
+I have built an API for a social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list. This application uses Express.js for routing, a MongoDB database, and the Mongoose ODM.
+
+This application is not deployed, but you can see how it works by watching the [video](#usage) below.
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -14,11 +18,80 @@
 
 ## Installation
 
+Ensure that you have Node.js installed, v16 is best. You can follow [this](https://coding-boot-camp.github.io/full-stack/nodejs/how-to-install-nodejs) guide for installation instructions.
+
+Clone this repository:
+
+```bash
+git clone git@github.com:sarasg89/my-social-API.git
+```
+
+Navigate into the directory where you cloned this repository:
+
+```bash
+cd ./my-social-API
+```
+
+Run npm install to retrieve the dependencies:
+
+```bash
+npm install
+```
+
+Ensure that you have MongoDB installed. You can follow [this](https://docs.mongodb.com/manual/installation/) guide for installation instructions.
+
+Finally, seed the database to test the routes with sample data:
+
+```bash
+npm run seed
+```
+
 ## Usage
+
+Start the server:
+
+```bash
+npm start
+```
+
+Use Insomnia Core or Postman to test the routes. You can download Insomnia Core [here](https://insomnia.rest/download) or Postman [here](https://www.postman.com/downloads/).
+
+Watch the video below to see how the routes work:
+
+Test the following routes:
+
+- Users
+
+GET, POST, PUT and DELETE users
+
+```http
+http://localhost:3001/api/users
+http://localhost:3001/api/users/:userId
+```
+
+- Thoughts
+
+GET, POST, PUT and DELETE thoughts
+
+```http
+http://localhost:3001/api/thoughts
+http://localhost:3001/api/thoughts/:thoughtId
+```
+
+- Reactions
+
+POST and DELETE reactions to thoughts
+
+```http
+http://localhost:3001/api/thoughts/:thoughtId/reactions/
+http://localhost:3001/api/thoughts/:thoughtId/reactions/:reactionId
+```
 
 ## Screenshots
 
 ## Credits
+
+I used the following tutorials/articles to help me build this application:
 
 [How to validate unique emails with Mongoose](https://masteringjs.io/tutorials/mongoose/mongoose-validate-unique-email)
 

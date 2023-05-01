@@ -2,8 +2,10 @@
   "name": "my-social-api",
   "version": "1.0.0",
   "description": "API for a social network web application",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "seed": "node utils/seeds.js",
     "test": "jest"
   },
   "repository": {
